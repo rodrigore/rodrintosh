@@ -1,45 +1,34 @@
 
-Clover EFI installer log - Sun Dec  8 23:06:33 -03 2019
-Installer version: v2.5k r5100 EFI bootloader
+Clover EFI installer log - Wed May 27 00:44:20 -04 2020
+Installer version: r5118 (commit: 6529f815d) EFI bootloader
 ======================================================
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *251.0 GB   disk0
+   0:      GUID_partition_scheme                        *1.0 TB     disk0
    1:                        EFI EFI                     209.7 MB   disk0s1
-   2:                 Apple_APFS Container disk1         250.8 GB   disk0s2
+   2:                 Apple_APFS Container disk1         999.9 GB   disk0s2
 
 /dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +250.8 GB   disk1
+   0:      APFS Container Scheme -                      +999.9 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume Apple SSD               209.0 GB   disk1s1
-   2:                APFS Volume Preboot                 48.0 MB    disk1s2
-   3:                APFS Volume Recovery                510.3 MB   disk1s3
-   4:                APFS Volume VM                      4.3 GB     disk1s4
+   1:                APFS Volume Samsung EVO 970 1TB ... 206.6 GB   disk1s1
+   2:                APFS Volume Preboot                 82.0 MB    disk1s2
+   3:                APFS Volume Recovery                528.5 MB   disk1s3
+   4:                APFS Volume VM                      3.2 GB     disk1s4
+   5:                APFS Volume Samsung EVO 970 1TB     10.8 GB    disk1s5
 
-/dev/disk2 (disk image):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        +8.3 GB     disk2
-   1:                        EFI EFI                     209.7 MB   disk2s1
-   2:                  Apple_HFS InstallESD              8.0 GB     disk2s2
-
-/dev/disk3 (external, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *15.5 GB    disk3
-   1:                        EFI EFI                     209.7 MB   disk3s1
-   2:                  Apple_HFS Install macOS Catalina  15.2 GB    disk3s2
-
+Target volume /Volumes/Samsung EVO 970 1TB on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
+Backing up /Volumes/Samsung EVO 970 1TB/EFIROOTDIR/EFI folder to /Volumes/Samsung EVO 970 1TB/EFI-Backups/r5100/2020-05-27-00h44/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
-Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/Install macOS Catalina
-Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/Install macOS Catalina
-Stage 2 - Written boot6 (x64) to /Volumes/Install macOS Catalina/boot
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
 
-Theme 'Clovy' (defined in config.plist) not found !
 Using default theme 'christmas'
 ======================================================
 =========== Clover EFI Installation Finish ===========
